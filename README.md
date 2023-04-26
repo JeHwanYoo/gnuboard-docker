@@ -1,4 +1,4 @@
-# FE-GnuBoard-Container
+# GnuBoard-Docker
 
 <img src="https://i.ibb.co/B42GNbY/Screenshot-2023-04-26-at-9-37-47-PM.png" alt="Screenshot-2023-04-26-at-9-37-47-PM" >
 
