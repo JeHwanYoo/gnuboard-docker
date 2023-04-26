@@ -1,2 +1,3 @@
 mariadb_data
+!mariadb_data/.gitkeep
 .idea
