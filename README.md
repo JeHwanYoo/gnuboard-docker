@@ -19,7 +19,11 @@
 
 ## 설치 (로컬)
 
-### Docker
+### 1. Git 설치
+
+[설치](https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%84%A4%EC%B9%98)
+
+### 2. Docker 설치
 
 #### Mac
 
@@ -35,27 +39,41 @@ https://docs.docker.com/desktop/install/linux-install/
 
 https://www.docker.com/
 
-### 빌드 후 실행
+### 3. 그누보드 소스 설치
+
+#### Linux & Mac
+
+```bash
+sh ./install.sh
+```
+
+#### Windows
+
+```batch
+install.bat
+```
+
+### 4. Docker 실행
+
+#### 빌드 후 실행
 
 ```bash
 docker compose up --build -d
 ```
 
-### 실행
+#### 실행
 
 ```bash
 docker compose up -d
 ```
 
-### 종료
+#### 종료
 
 ```bash
 docker compose down
 ```
 
-### 그누보드 설치
-
-#### 접속 주소
+### 5. 그누보드 설치
 
 #### 개발 용 DB 정보
 
@@ -65,6 +83,8 @@ User: gnu
 Password: gnu2000
 DB: gnu
 ```
+
+#### 접속 주소
 
 ```
 http://localhost
@@ -84,6 +104,8 @@ http://localhost
 
 - DB 파일 볼륨 - mariadb_data
 - PHP 소스 볼륨 - source
+
+source 는 Submodule 로 관리하세요.
 
 ## 포트 (로컬)
 
