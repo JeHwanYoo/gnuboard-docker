@@ -114,9 +114,15 @@ source 는 Submodule 로 관리하세요.
 - PHP: 9000
 - MariaDB: 3306
 
+## Docker 이미지 배포
+
+```bash
+sh push-ecr.sh <profile>
+```
+
 ## Todo
 
-- [ ] push to ECR
+- [x] push to ECR
 - [ ] run on ECS (with EFS Volume)
 - [ ] Separate DB into private zone
 - [ ] Connect with Cognito for Authentication
