@@ -1,5 +1,4 @@
 const {Stack, Duration, aws_ecr} = require('aws-cdk-lib')
-const {v4: uuid4} = require('uuid')
 
 class GnuCdkStack extends Stack {
     /**
@@ -18,10 +17,15 @@ class GnuCdkStack extends Stack {
         //   visibilityTimeout: Duration.seconds(300)
         // });
 
-        const repositoryName = `repository-${uuid4(null, null, null)}`;
+        const gnuNginx = `gnu-nginx`;
+        const gnuPhp = `gnu-php`;
 
-        new aws_ecr.Repository(this, repositoryName, {
-            repositoryName,
+        new aws_ecr.Repository(this, gnuNginx, {
+            repositoryName: gnuNginx,
+        })
+
+        new aws_ecr.Repository(this, gnuPhp, {
+            repositoryName: gnuPhp,
         })
     }
 }
