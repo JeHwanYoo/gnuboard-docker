@@ -12,7 +12,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./mariadb_data:/var/lib/mysql
+      - mariadb_data:/var/lib/mysql
   php:
     container_name: php
     image: 524043130808.dkr.ecr.ap-northeast-2.amazonaws.com/gnu-php
@@ -38,3 +38,4 @@ services:
       - "443:443"
 volumes:
   html:
+  mariadb_data:

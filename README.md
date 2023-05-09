@@ -103,7 +103,7 @@ http://localhost
 ## 개발 (로컬)
 
 - DB 파일 볼륨 - mariadb_data
-- PHP 소스 볼륨 - source
+- PHP 소스 볼륨 - html
 
 source 는 Submodule 로 관리하세요.
 
