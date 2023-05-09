@@ -126,6 +126,39 @@ sh login-docker-by-aws.sh <profile>
 sh push-ecr.sh <profile>
 ```
 
+## Docker to ECS
+
+참고: https://github.com/GenstarDB/aws-docker2ecs
+
+```
+//local test
+docker-compose up
+
+//aws configuration
+aws config
+
+//list current context
+docker context ls
+
+//create context for ecs
+docker context create ecs myecscontext
+
+//use ecs context
+docker context use myecscontext
+
+//convert docker-compose stack to cloudformation
+docker compose convert
+
+//Deployment to ECS
+docker compose up
+
+//Details of the compose stack -> Find the url of LB
+docker compose ps
+
+//Delete cfn stack from AWS
+docker compose down
+```
+
 ## Todo
 
 - [x] push to ECR
