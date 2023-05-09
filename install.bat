@@ -1,5 +1,7 @@
-git clone https://github.com/gnuboard/gnuboard5.git source
+git clone https://github.com/gnuboard/gnuboard5.git tmp
+rm -rf tmp/.git
+mkdir tmp/data
 
-rmdir /s /q source\.git
+docker cp --archive tmp/. nginx:var/www/html
 
-mkdir source\data
+rd /s /q tmp
